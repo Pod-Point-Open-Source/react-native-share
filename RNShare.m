@@ -11,14 +11,14 @@
 }
 
 RCT_EXPORT_MODULE()
-RCT_EXPORT_METHOD(open:(NSDictionary *)options)
+RCT_EXPORT_METHOD(open:(NSDictionary *)options :(RCTResponseSenderBlock)callback)
 {
     // Your implementation here
     NSString *shareText = [RCTConvert NSString:options[@"share_text"]];
     NSString *shareUrl = [RCTConvert NSString:options[@"share_URL"]];
     //some app extension need a NSURL or UIImage Object to share
     NSURL *cardUrl = [NSURL URLWithString:shareUrl];
-    
+
     NSArray *itemsToShare = @[shareText, shareUrl,cardUrl];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
     /*activityVC.excludedActivityTypes = @[UIActivityTypePostToWeibo,
