@@ -29,10 +29,10 @@ public class RNShareModule extends ReactContextBaseJavaModule {
     share.setType("text/plain");
     //share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
     if (options.hasKey("share_text") && !options.isNull("share_text")) {
-      share.putExtra(Intent.EXTRA_SUBJECT, options.getString("share_text"));
+      share.putExtra(Intent.EXTRA_TEXT, options.getString("share_text"));
     }
     if (options.hasKey("share_URL") && !options.isNull("share_URL")) {
-      share.putExtra(Intent.EXTRA_TEXT, options.getString("share_URL"));
+      share.putExtra(Intent.EXTRA_SUBJECT, options.getString("share_URL"));
     }
     String title = "Share";
     if (options.hasKey("title") && !options.isNull("title")) {
