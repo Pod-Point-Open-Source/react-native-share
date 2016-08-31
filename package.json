@@ -1,10 +1,10 @@
 {
-  "name": "react-native-share",
+  "name": "@pod-point-open-source/react-native-share",
   "description": "Social Share, Sending Simple Data to Other Apps",
   "version": "1.0.4",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EstebanFuentealba/react-native-share.git"
+    "url": "git+https://github.com/Pod-Point-Open-Source/react-native-share.git"
   },
   "keywords": [
     "react-component",
@@ -13,8 +13,8 @@
     "ios"
   ],
   "author": {
-    "name": "Esteban Fuentealba",
-    "email": "efuentealba@json.cl"
+    "name": "POD Point",
+    "email": "software@pod-point.com"
   },
   "license": "MIT",
   "readmeFilename": "README.md"
