@@ -1,10 +1,10 @@
 {
-  "name": "@pod-point-open-source/react-native-share",
+  "name": "@pod-point/react-native-share",
   "description": "Social Share, Sending Simple Data to Other Apps",
   "version": "1.0.4",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pod-Point-Open-Source/react-native-share.git"
+    "url": "git+https://github.com/Pod-Point/react-native-share.git"
   },
   "keywords": [
     "react-component",
